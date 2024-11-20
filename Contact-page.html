@@ -38,36 +38,82 @@
 </div>
 
 
-    <header class="hero">
+    <header class="hero contact-hero">
     <nav class="navbar">
-      <div class="logo"><img src="wastewise.png" alt="waste logo"></div>
-      <ul class="nav-links">
-        <li><a href="wastemgt.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#services">Our Services</a></li>
-        <li><a href="#Buy-a-bin">Buy a Bin</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#signup" class="signup-btn">Sign Up</a></li>
-      </ul>
+        <div class="logo">
+            <a href="wastemgt.html">
+                <img src="wastewise.png" alt="WasteWise Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="wastemgt.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#Buy-a-bin">Buy a Bin</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="#signup" class="signup-btn">Sign Up</a></li>
+        </ul>
     </nav>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Waste <span>Management</span> at Your Doorstep</h1>
-        <p>We provide safe, reliable and competitive waste collection process for Households and Businesses</p>
-        <button class="cta-btn">Read More</button>
-        <button class="cta-btn"> Our Services</button>
-      </div>
-      <div class="hero-image">
-        <img src="recycle.jpg" alt="Recycling Illustration">
-      </div>
-    </div>
-  </header>
+
+    
+</header>
 
 
 
 
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <!-- Header Section (Already in Your Website) -->
+    <!-- Include your header here -->
+
+    <!-- Main Section -->
+    <main id="contact-page">
+        <section class="contact-container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us. We’d love to hear from you!</p>
+            
+            <div class="contact-form-container">
+                <form action="submit-form.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Already in Your Website) -->
+    <!-- Include your footer here -->
+</body>
+</html>
 
 
 
@@ -141,6 +187,115 @@
 
     <script src="script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places" async defer></script>
+
+
+
+
+
+
+<style>
+/* Header */
+header {
+    background-color: #28a745; /* Green background */
+    color: #ffffff; /* White text */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the content */
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #1e7a38; /* Darker green for hover */
+    
+}
+
+.nav-links li a.active {
+    background-color: #1e7a38;
+    font-weight: bold;
+}
+
+/* Hero content styles */
+.hero {
+    padding: 2rem 1rem;
+    background-image: url('contact-bg.jpg'); /* Replace with your contact-specific background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-text {
+    margin: 2rem 0;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+    color: #f9c74f; /* Accent color for 'Us' */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Utility button styles */
+.signup-btn {
+    background-color: #f9c74f;
+    color: #004d00;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ffcc00;
+}
+
+</style>
+
+
+
+
 </body>
 
 </html>
