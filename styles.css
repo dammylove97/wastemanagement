@@ -29,6 +29,16 @@ body {
         left: 0;
     }
 
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 1rem 0;
+    }
+}
+
+
 nav {
     background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
