@@ -17,6 +17,18 @@ body {
 }
 
 /* Navigation */
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #28a745;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+
 nav {
     background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
