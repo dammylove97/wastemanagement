@@ -214,3 +214,66 @@ function displayError(message) {
     var marker = L.marker([40.7128, -74.0060]).addTo(map);
     marker.bindPopup("<b>Recycling Center</b><br>New York City").openPopup();
 </script>
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+/>
+
+<script>
+  // Initialize the map
+  const map = L.map("map").setView([51.505, -0.09], 13); // Default location (London)
+
+  // Add OpenStreetMap tiles
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  // Add a marker for the current default view
+  let marker = L.marker([51.505, -0.09]).addTo(map);
+
+  // Function to search and update the map
+  async function searchLocation() {
+    const locationInput = document.getElementById("location-input").value;
+    if (!locationInput) {
+      alert("Please enter a location.");
+      return;
+    }
+
+    try {
+      // Geocoding API for location search (Nominatim)
+      const response = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          locationInput
+        )}`
+      );
+      const data = await response.json();
+
+      if (data.length > 0) {
+        const { lat, lon } = data[0];
+        const location = [parseFloat(lat), parseFloat(lon)];
+
+        // Update map view
+        map.setView(location, 13);
+
+        // Update marker position
+        marker.setLatLng(location);
+
+        // Add a popup
+        marker.bindPopup(`<b>${data[0].display_name}</b>`).openPopup();
+      } else {
+        alert("Location not found. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error fetching location data:", error);
+      alert("Failed to load location. Please try again later.");
+    }
+  }
+
+  // Attach search function to button
+  document.getElementById("search-btn").addEventListener("click", searchLocation);
+</script>
