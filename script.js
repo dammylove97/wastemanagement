@@ -56,5 +56,4 @@ document.getElementById("search-btn").addEventListener("click", searchLocation);
 
 // Utility function to display errors
 function displayError(message) {
-  alert(`WasteWise: ${message}`);
-}
+  alert(`WasteWise: ${message}`);}
