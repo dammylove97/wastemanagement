@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteWise - Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Services Section -->
+<div class="ourservices-page">
+    <section class="hero-banner">
+        <div class="hero-text">
+            <h1>Explore Our Smart Waste Management Services</h1>
+            <p>
+                Transforming waste management with innovative, efficient, and eco-conscious solutions for homes, industries, and businesses. Discover how we can make a difference for you!
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="hero-services.jpg" alt="Smart Waste Management">
+        </div>
+    </section>
+
+    <section class="ourservices-content">
+        <h2>A Wide Range of Tailored Services</h2>
+        <div class="services-grid">
+            <!-- Service Card 1 -->
+            <div class="services-card">
+                <div class="badge">For Industries</div>
+                <div class="icon">
+                    <img src="industry-icon.png" alt="Industry Icon">
+                </div>
+                <h2>Commercial Liquid & Special Waste Services</h2>
+                <p>Providing eco-friendly solutions for liquid waste such as oil filters, antifreeze, and absorbents to promote sustainability.</p>
+                <ul>
+                    <li>✔ Commercial Hazardous Waste</li>
+                    <li>✔ Industrial Waste Materials</li>
+                    <li>✔ Used Antifreeze Recycling</li>
+                </ul>
+                <a href="#" class="explore-link">Learn More ↗</a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="services-card">
+                <div class="badge">For Individuals</div>
+                <div class="icon">
+                    <img src="dumpster-icon.png" alt="Dumpster Icon">
+                </div>
+                <h2>Roll-Off Dumpster Rental Services</h2>
+                <p>Flexible dumpster rental plans to suit residential and small-scale commercial waste collection needs.</p>
+                <ul>
+                    <li>✔ House Bulk Trash Pickup</li>
+                    <li>✔ Construction Dumpsters</li>
+                    <li>✔ Residential Dumpsters</li>
+                </ul>
+                <a href="#" class="explore-link">Learn More ↗</a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="services-card">
+                <div class="badge">For Businesses</div>
+                <div class="icon">
+                    <img src="cleaning-icon.png" alt="Cleaning Icon">
+                </div>
+                <h2>Industrial Cleaning & Sanitizing Services</h2>
+                <p>Ensure a clean and safe workspace with high-pressure water jetting, flushing, and water hauling services.</p>
+                <ul>
+                    <li>✔ Water Jetting & Flushing</li>
+                    <li>✔ High-Pressure Water Cutting</li>
+                    <li>✔ Water Hauling & Supply</li>
+                </ul>
+                <a href="#" class="explore-link">Learn More ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="customer-satisfaction">
+        <div class="banner">
+            <h2>Delivering Excellence</h2>
+            <p>
+                <strong>99.9% Customer Satisfaction</strong> based on 750+ reviews of 6,154 completed projects. We are trusted by 2,194 happy customers.
+            </p>
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="cta-image">
+                <img src="cta-waste.jpg" alt="Request Pickup">
+            </div>
+            <div class="cta-text">
+                <h2>Get Started Today!</h2>
+                <p>
+                    Reliable and trusted services to meet all your waste requirements. Request a free quote now and join us in creating a cleaner environment.
+                </p>
+                <a href="#" class="cta-button">Request Pickup ↗</a>
+            </div>
+        </div>
+    </section>
+</div>
